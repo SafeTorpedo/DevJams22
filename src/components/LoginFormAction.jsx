@@ -1,4 +1,3 @@
-import { Action } from "@remix-run/router";
 import React from "react";
 
 const LoginFormAction = ({
