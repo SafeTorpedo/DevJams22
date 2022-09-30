@@ -11,7 +11,7 @@ const Header = ({ heading, paragraph, linkName, link = "#" }) => {
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                 {heading}
             </h2>
-            <p className="mt-2 text-center text-sm text-gray-600">
+            <p className="mt-2 text-center text-md text-black font-bold">
                 {paragraph}{" "}
                 <Link
                     to={link}
