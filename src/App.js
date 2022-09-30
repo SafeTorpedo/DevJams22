@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import "./index.css";
+import Canvas from "./components/Canvas";
 
 function App() {
     return (
@@ -14,6 +15,10 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Login />} />
                             <Route path="/signup" element={<Signup />} />
+                            <Route
+                                path="/dashboard"
+                                element={<Canvas width={800} height={300} />}
+                            />
                         </Routes>
                     </BrowserRouter>
                 </div>
