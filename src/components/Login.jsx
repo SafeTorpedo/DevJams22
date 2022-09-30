@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Loginform from "./Loginform";
 
 const Login = () => {
     return (
@@ -10,6 +11,7 @@ const Login = () => {
                 linkName="Sign up"
                 link="/signup"
             />
+            <Loginform />
         </>
     );
 };
