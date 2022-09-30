@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import login from "../assets/login-icon.jpg";
 
-const Header = (heading, paragraph, linkName, link = "#") => {
+const Header = ({ heading, paragraph, linkName, link = "#" }) => {
     return (
-        <div>
-            <div>
-                <img className="h-14 w-14" src={login} alt="" />
+        <div className="mb-10">
+            <div className="flex justify-center">
+                <img className="h-14 w-20" src={login} alt="" />
             </div>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
                 {heading}

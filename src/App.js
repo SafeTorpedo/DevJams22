@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Login from "./components/Login";
 
 function App() {
     return (
@@ -6,8 +8,8 @@ function App() {
             <div className="max-w-md w-full space-y-8">
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/" />
-                        <Route path="/signup" />
+                        <Route path="/" element={<Login />} />
+                        <Route path="/signup" element={<Header />} />
                     </Routes>
                 </BrowserRouter>
             </div>
